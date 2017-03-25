@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
+    </head>
+
+<body ng-app="myApp">
+
+<div class="blue">
+    <i class="fa fa-building fa-2x"></i>Brigade Metropolis &nbsp&nbsp&nbsp&nbsp 2BHK &nbsp&nbsp&nbsp&nbsp 1200sqft
+</div>
+
+<p> Select Brand</p>
+        <select class="form-control" id="select">
+          <option>Asian paints</option>
+          <option>Abc paints</option>
+          <option>Pqr paints</option>
+          <option>Xyz paints</option>
+</select>
+
+
+
+<div class="cost">
+    Price Detail Wall 
+    <p>Ceiling &nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-inr" ></i>&nbsp&nbsp12653</p>
+    <p>Wall &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</nbsp><i class="fa fa-inr" ></i>&nbsp&nbsp 41350</p>
+     <p class="blue">Total Cost <i class="fa fa-inr" ></i>&nbsp&nbsp 41350</p>
+</div>
+
+
+<div class="option">
+<div class="tab"  ng-controller="myctrl1">
+   <h3>Select paints for walls</h3>
+    <div class="col-1">
+  <a  href="#tractoremulsion"><button class="tablinks"  ng-class="{ active: isSet(1) }" ng-click="setTab(1)">18/<p style="margin: 0px;">sqft</p></button></a>
+  <p>Tractor Emulsion</p>
+    </div>
+    <div class="col-1">
+  <a  href="#royaleluxury"><button class="tablinks" ng-class="{ active: isSet(2) }" ng-click="setTab(2)">22/<p style="margin: 0px;">sqft</p></button></a>
+  <p>Royale Luxury</p>
+    </div>
+  <div class="col-1">
+  <a  href="#royaleaspira"><button class="tablinks" ng-class="{ active: isSet(3) }" ng-click="setTab(3)">23/<p style="margin: 0px;">sqft</p></button></a>
+  <p>Royale Aspera</p>
+  </div>
+  <div class="col-1">
+  <a  href="#royaleshyne"><button class="tablinks" ng-class="{ active: isSet(4) }" ng-click="setTab(4)">24/<p style="margin: 0px;">sqft</p></button></a>
+  <p>Royale Shyne</p>
+  </div>
+  <div class="col-1">
+  <a  href="#royalematt"><button class="tablinks" ng-class="{ active: isSet(5) }" ng-click="setTab(5)">25/<p style="margin: 0px;">sqft</p></button></a>
+  <p>Royale Matt</p>
+  </div>
+  <div class="col-1">
+  <a  href="#royaleatom"><button class="tablinks" ng-class="{ active: isSet(6) }" ng-click="setTab(6)">26/<p style="margin: 0px;">sqft</p></button></a>
+  <p>Royale Atom</p>
+  </div>
+  <div class="col-1">
+  <a  href="#royalematt2"><button class="tablinks" ng-class="{ active: isSet(7) }" ng-click="setTab(7)">25/<p style="margin: 0px;">sqft</p></button></a>
+  <p>Rouale Matt</p>
+  </div>
+  <div class="col-1">
+  <a  href="#royaleatom2"><button class="tablinks" ng-class="{ active: isSet(8) }" ng-click="setTab(8)">26/<p style="margin: 0px;">sqft</p></button></a>
+  <p>Royale Atom</p>
+ </div>
+
+    <div ng-show="isSet(1)" >
+        <div>
+            <img class='image' src='image/1.jpg'>
+            <div class='imagetext'>
+                <font>
+                    <h3>Royale Luxury</h3>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+            </div>
+    </div>
+    </div>
+
+    <div ng-show="isSet(2)" >
+        <div>
+            <img class='image' src='image/2.jpg'>
+        <div class='imagetext'>
+            <font>
+                <h3>Royale Luxury</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+            </font>
+        </div>
+    </div>
+    </div>
+
+    <div ng-show="isSet(3)" >
+        <div>
+            <img class='image' src='image/3.png'>
+            <div class='imagetext'>
+                <font>
+                    <h3>Royale Luxury</h3>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+        </div>
+    </div>
+    </div>
+
+    <div ng-show="isSet(4)" >
+        <div>
+            <img class='image' src='image/4.png'>
+            <div class='imagetext'>
+                <font><h3>Royale Luxury</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+        </div>
+    </div>
+    </div>
+
+    <div ng-show="isSet(5)" >
+        <div><img class='image' src='image/5.png'>
+        <div class='imagetext'>
+            <font>
+                <h3>Royale Luxury</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="isSet(6)" >
+        <div><img class='image' src='image/6.jpg'>
+        <div class='imagetext'>
+            <font>
+                <h3>Royale Luxury</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+                </div>
+        </div>
+    </div>
+    <div ng-show="isSet(7)">
+        <div>
+            <img class='image' src='image/7.jpg'>
+            <div class='imagetext'>
+                <font>
+                    <h3>Royale Luxury</h3>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                    </font>
+                    </div>
+        </div>
+    </div>
+
+    <div ng-show="isSet(8)" >
+        <div><img class='image' src='image/8.jpg'>
+        <div class='imagetext'>
+            <font>
+                <h3>Royale Luxury</h3
+                >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsd
+                </font>
+                </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="tab"  ng-controller="myctrl1">
+    <h3>Select paints for ceiling</h3>
+        <div class="col-1">
+    <a  href="#tractoremulsion"><button class="tablinks"  ng-class="{ active: isSet(1) }" ng-click="setTab(1)">18/<p style="margin: 0px;">sqft</p></button></a>
+    <p>Tractor Emulsion</p>
+        </div>
+        <div class="col-1">
+    <a  href="#royaleluxury"><button class="tablinks" ng-class="{ active: isSet(2) }" ng-click="setTab(2)">22/<p style="margin: 0px;">sqft</p></button></a>
+    <p>Royale Luxury</p>
+        </div>
+    <div class="col-1">
+    <a  href="#royaleaspira"><button class="tablinks" ng-class="{ active: isSet(3) }" ng-click="setTab(3)">23/<p style="margin: 0px;">sqft</p></button></a>
+    <p>Royale Aspera</p>
+    </div>
+    <div class="col-1">
+    <a  href="#royaleshyne"><button class="tablinks" ng-class="{ active: isSet(4) }" ng-click="setTab(4)">24/<p style="margin: 0px;">sqft</p></button></a>
+    <p>Royale Shyne</p>
+    </div>
+    <div class="col-1">
+    <a  href="#royalematt"><button class="tablinks" ng-class="{ active: isSet(5) }" ng-click="setTab(5)">25/<p style="margin: 0px;">sqft</p></button></a>
+    <p>Royale Matt</p>
+    </div>
+    <div class="col-1">
+    <a  href="#royaleatom"><button class="tablinks" ng-class="{ active: isSet(6) }" ng-click="setTab(6)">26/<p style="margin: 0px;">sqft</p></button></a>
+    <p>Royale Atom</p>
+    </div>
+    <div class="col-1">
+    <a  href="#royalematt2"><button class="tablinks" ng-class="{ active: isSet(7) }" ng-click="setTab(7)">25/<p style="margin: 0px;">sqft</p></button></a>
+    <p>Rouale Matt</p>
+    </div>
+    <div class="col-1">
+    <a  href="#royaleatom2"><button class="tablinks" ng-class="{ active: isSet(8) }" ng-click="setTab(8)">26/<p style="margin: 0px;">sqft</p></button></a>
+    <p>Royale Atom</p>
+    </div>
+
+    <div ng-show="isSet(1)" >
+        <div>
+            <img class='image' src='image/1.jpg'>
+            <div class='imagetext'>
+                <font>
+                    <h3>Royale Luxury</h3>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+            </div>
+    </div>
+    </div>
+
+    <div ng-show="isSet(2)" >
+        <div>
+            <img class='image' src='image/2.jpg'>
+        <div class='imagetext'>
+            <font>
+                <h3>Royale Luxury</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+            </font>
+        </div>
+    </div>
+    </div>
+
+    <div ng-show="isSet(3)" >
+        <div>
+            <img class='image' src='image/3.png'>
+            <div class='imagetext'>
+                <font>
+                    <h3>Royale Luxury</h3>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+        </div>
+    </div>
+    </div>
+
+    <div ng-show="isSet(4)" >
+        <div>
+            <img class='image' src='image/4.png'>
+            <div class='imagetext'>
+                <font><h3>Royale Luxury</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+        </div>
+    </div>
+    </div>
+
+    <div ng-show="isSet(5)" >
+        <div><img class='image' src='image/5.png'>
+        <div class='imagetext'>
+            <font>
+                <h3>Royale Luxury</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+            </div>
+        </div>
+    </div>
+
+    <div ng-show="isSet(6)" >
+        <div><img class='image' src='image/6.jpg'>
+        <div class='imagetext'>
+            <font>
+                <h3>Royale Luxury</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                </font>
+                </div>
+        </div>
+    </div>
+    <div ng-show="isSet(7)">
+        <div>
+            <img class='image' src='image/7.jpg'>
+            <div class='imagetext'>
+                <font>
+                    <h3>Royale Luxury</h3>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsdg
+                    </font>
+                    </div>
+        </div>
+    </div>
+
+    <div ng-show="isSet(8)" >
+        <div><img class='image' src='image/8.jpg'>
+        <div class='imagetext'>
+            <font>
+                <h3>Royale Luxury</h3
+                >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium fsf sdkfe ssd hsdvb sdgsd
+                </font>
+                </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<div class="plus blue fa fa-plus-square-o fa-2x">
+<font style="font-family: Verdana;font-size:27px;"> Advanced filter</font>
+</div>
+<button class="button button1">Send Quote</button>
+
+</body>
+</html>
